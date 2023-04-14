@@ -99,7 +99,7 @@ organization = ""
 retention_in_days = "7"
 
 acm = {
-domain_name = "invisiblecodebuddy.com"
+domain_name = "invisiblecoworker.com"
 }
 
 s3_name = "test-bucket-name-tech"
