@@ -1,7 +1,7 @@
-name               = "devon"
-environment        = "dev"
-region             = "ap-south-1"
-account_id         = "653470767467"
+name               = "devon" # project name
+environment        = "dev" # environment name
+region             = "ap-south-1" # region
+account_id         = "005640028272" # account id from aws top right profile
 
 
 # vpc Stack
@@ -24,6 +24,9 @@ image_tag_mutability = "MUTABLE"
 scan_on_push         = true #false for not scanning#
 force_delete         = "true"
 }
+
+# docker images
+# change port to match docker images
 
 alb = {
 
@@ -73,6 +76,7 @@ monitoring_interval                   = 0
 
 }
 
+# change git hub to match your personal github
 github = {
 
 repo_owner    = "ankushtechtweek"
@@ -91,15 +95,14 @@ ecs_task_def = {
   container_port   = "5000"
 }
 
-cloud = {
-api_token    = ""
-organization = ""
-}
-
+# how long the loads persist
 retention_in_days = "7"
 
+# need to add to AWS Domain Registry
+# need to manage ACM (Amazon Certificate Manager) - Add CNAME records to domain
 acm = {
 domain_name = "invisiblecoworker.com"
 }
 
+# S3 Bucket
 s3_name = "test-bucket-name-tech"
