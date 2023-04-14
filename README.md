@@ -1,3 +1,7 @@
+## CodeBuddy
+
+See CodeBuddy cheatsheet for a more detailed readme.
+
 ## This Terraform configuration creates the following resources in AWS:
 
 1. A Virtual Private Cloud (VPC)
@@ -26,6 +30,7 @@ Before using this Terraform configuration, ensure you have the following:
 
 AWS_ACCESS_KEY_ID=<your_access_key>
 AWS_SECRET_ACCESS_KEY=<your_secret_key>
+TF_CLI_ARGS_plan=-var-file=../env/dev/dev.tfvars
 
 You can obtain your AWS access keys by creating a new IAM user in your AWS account and assigning it the necessary permissions.
 
